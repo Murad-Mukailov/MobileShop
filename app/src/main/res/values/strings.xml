@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MobileShope</string>
+    <string name="location">Zihuatanejo,Gro</string>
+    <string name="select_category">Select Category</string>
+    <string name="view_all">view all</string>
+    <string name="_1_047">$1,047</string>
+    <string name="_1_500">$1,500</string>
+    <string name="samsung_galaxy">Samsung Galaxy s20 Ultra</string>
+    <string name="explorer">Explorer</string>
 </resources>

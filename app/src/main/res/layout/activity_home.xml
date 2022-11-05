@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_home_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/location_home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawableEnd="@drawable/ic_show"
+        android:drawablePadding="11dp"
+        android:text="@string/location"
+        android:textColor="@color/home_text_location"
+        android:textSize="@dimen/font_15"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/content_home_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_home_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_home_text" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottom_navigation_home_container"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@color/bottom_navigation">
+
+        <TextView
+            android:id="@+id/name_home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="26dp"
+            android:drawableStart="@drawable/ic_dot"
+            android:drawablePadding="5dp"
+            android:text="@string/explorer"
+            android:textColor="@color/bottom_navigation_text"
+            android:textSize="@dimen/font_16sp" />
+
+        <ImageView
+            android:id="@+id/shop_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_bag" />
+
+        <ImageView
+            android:id="@+id/favorite_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_favorite" />
+
+        <ImageView
+            android:id="@+id/person_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_person" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

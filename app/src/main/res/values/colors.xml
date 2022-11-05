@@ -7,4 +7,28 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="brand_wild_sand">#F5F5F5</color>
+    <color name="brand_stratos">#010035</color>
+    <color name="brand_persimmon">#FF6E4E</color>
+    <color name="brand_white">#FFFFFF</color>
+    <color name="brand_silver">#CCCCCC</color>
+    <color name="home_background">@color/brand_wild_sand</color>
+    <color name="home_text_location">@color/brand_stratos</color>
+    <color name="home_item_title">@color/brand_stratos</color>
+    <color name="home_item_title_small">@color/brand_persimmon</color>
+    <color name="home_item_title_background">@color/brand_wild_sand</color>
+    <color name="home_item_category_background">@color/brand_wild_sand</color>
+    <color name="home_item_category">@color/brand_persimmon</color>
+    <color name="home_items_category_background">@color/brand_white</color>
+    <color name="home_items_search_background">@color/brand_white</color>
+    <color name="home_item_search_background">@color/brand_white</color>
+    <color name="home_item_search_background_qr">@color/brand_persimmon</color>
+    <color name="home_item_product_price_text">@color/brand_stratos</color>
+    <color name="home_item_product_background">@color/brand_white</color>
+    <color name="home_item_product_text">@color/brand_silver</color>
+    <color name="home_item_name_product_text">@color/brand_stratos</color>
+    <color name="product_bg">@color/brand_white</color>
+    <color name="bottom_navigation">@color/brand_stratos</color>
+    <color name="bottom_navigation_text">@color/brand_white</color>
 </resources>
