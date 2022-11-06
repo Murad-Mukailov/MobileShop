@@ -1,4 +1,4 @@
-package com.example.mobileshope
+package com.example.mobileshope.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

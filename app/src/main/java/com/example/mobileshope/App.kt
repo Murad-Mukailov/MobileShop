@@ -1,6 +1,7 @@
-package com.example.mobileshope.util
+package com.example.mobileshope
 
 import android.app.Application
+import com.example.mobileshope.di.allModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -11,7 +12,7 @@ class App : Application() {
         startKoin {
             androidLogger()
             androidContext(this@App)
-            modules()
+            modules(allModules())
         }
     }
 }

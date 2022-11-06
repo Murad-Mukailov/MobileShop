@@ -1,4 +1,4 @@
-package com.example.mobileshope.view.model
+package com.example.mobileshope.home
 
 import androidx.lifecycle.ViewModel
 
