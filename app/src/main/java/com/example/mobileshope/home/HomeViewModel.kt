@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mobileshope.api.MainAPI
 import com.example.mobileshope.model.HomeResponse
+import com.example.mobileshope.util.CategoryGenerator
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -19,6 +20,7 @@ class HomeViewModel(private val mainAPI: MainAPI) : ViewModel() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 val home = mainAPI.getHome()
+                val categories = CategoryGenerator.generateCategory()
                 withContext(Dispatchers.Main) { _content.value = home }
             } catch (e: Exception) {
 
