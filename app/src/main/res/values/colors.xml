@@ -31,4 +31,9 @@
     <color name="product_bg">@color/brand_white</color>
     <color name="bottom_navigation">@color/brand_stratos</color>
     <color name="bottom_navigation_text">@color/brand_white</color>
+    <color name="bottom_new">@color/brand_persimmon</color>
+    <color name="name_horizontal_text">@color/brand_white</color>
+    <color name="description_horizontal_text">@color/brand_white</color>
+    <color name="buy_horizontal_button">@color/brand_white</color>
+    <color name="buy_horizontal_text">@color/brand_stratos</color>
 </resources>

@@ -1,17 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/parent_horizontal_container"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView
-        android:id="@+id/item_horizontal_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/new_horizontal_image"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/bottom_new"
+        android:scaleType="center"
+        android:src="@drawable/ic_resource_new"
+        android:translationZ="2dp"
+        app:shapeAppearance="@style/circle" />
+
+    <TextView
+        android:id="@+id/name_horizontal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/iphone_12"
+        android:textColor="@color/name_horizontal_text"
+        android:textSize="@dimen/font_max"
+        android:textStyle="bold"
+        android:translationZ="2dp" />
+
+    <TextView
+        android:id="@+id/description_horizontal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/super.mega.rapido"
+        android:textColor="@color/description_horizontal_text"
+        android:translationZ="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buy_horizontal_button"
+        android:layout_width="98dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="133dp"
+        android:backgroundTint="@color/buy_horizontal_button"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/buy_now"
+        android:textAllCaps="false"
+        android:textColor="@color/brand_stratos"
+        android:textSize="@dimen/font_11"
+        android:textStyle="bold"
+        app:cornerRadius="5dp" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_horizontal_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/horizontal_scroll_image"
-        android:scaleType="fitStart" />
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/background_horizontal_image"
+            android:layout_width="147dp"
+            android:layout_height="199dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bakck_image" />
+
+        <ImageView
+            android:id="@+id/preview_horizontal_image"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/horizontal_scroll"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
