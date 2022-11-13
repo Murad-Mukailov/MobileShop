@@ -19,7 +19,6 @@
         android:text="@string/location"
         android:textColor="@color/home_text_location"
         android:textSize="@dimen/font_15"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

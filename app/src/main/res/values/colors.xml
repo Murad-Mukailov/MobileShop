@@ -36,4 +36,6 @@
     <color name="description_horizontal_text">@color/brand_white</color>
     <color name="buy_horizontal_button">@color/brand_white</color>
     <color name="buy_horizontal_text">@color/brand_stratos</color>
+    <color name="item_category_bg">@color/brand_white</color>
+    <color name="item_category_text">@color/brand_stratos</color>
 </resources>

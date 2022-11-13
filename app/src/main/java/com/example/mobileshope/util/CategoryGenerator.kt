@@ -8,22 +8,39 @@ object CategoryGenerator {
         return listOf(
             Category(
                 name = "Phones",
-                chek = true,
                 image = R.drawable.ic_phone
             ),
             Category(
                 name = "Computer",
-                chek = false,
                 image = R.drawable.ic_computer
             ),
             Category(
-                name = "Phones",
-                chek = false,
+                name = "Health",
                 image = R.drawable.ic_health
             ),
             Category(
+                name = "Books",
+                image = R.drawable.ic_books
+            ), Category(
                 name = "Phones",
-                chek = false,
+                image = R.drawable.ic_computer
+            ), Category(
+                name = "Health",
+                image = R.drawable.ic_health
+            ), Category(
+                name = "Computer",
+                image = R.drawable.ic_computer
+            ), Category(
+                name = "Phones",
+                image = R.drawable.ic_phone
+            ), Category(
+                name = "Health",
+                image = R.drawable.ic_health
+            ), Category(
+                name = "Computer",
+                image = R.drawable.ic_computer
+            ), Category(
+                name = "Phones",
                 image = R.drawable.ic_books
             )
         )
