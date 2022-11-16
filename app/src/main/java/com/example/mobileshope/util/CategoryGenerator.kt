@@ -8,40 +8,23 @@ object CategoryGenerator {
         return listOf(
             Category(
                 name = "Phones",
-                image = R.drawable.ic_phone
+                imagePositive = R.drawable.ic_phone_gray,
+                imageNegative = R.drawable.ic_phone_white
             ),
             Category(
                 name = "Computer",
-                image = R.drawable.ic_computer
+                imagePositive = R.drawable.ic_computer_gray,
+                imageNegative = R.drawable.ic_computer_white
             ),
             Category(
                 name = "Health",
-                image = R.drawable.ic_health
+                imagePositive = R.drawable.ic_health_gray,
+                imageNegative = R.drawable.ic_health_white
             ),
             Category(
                 name = "Books",
-                image = R.drawable.ic_books
-            ), Category(
-                name = "Phones",
-                image = R.drawable.ic_computer
-            ), Category(
-                name = "Health",
-                image = R.drawable.ic_health
-            ), Category(
-                name = "Computer",
-                image = R.drawable.ic_computer
-            ), Category(
-                name = "Phones",
-                image = R.drawable.ic_phone
-            ), Category(
-                name = "Health",
-                image = R.drawable.ic_health
-            ), Category(
-                name = "Computer",
-                image = R.drawable.ic_computer
-            ), Category(
-                name = "Phones",
-                image = R.drawable.ic_books
+                imagePositive = R.drawable.ic_books_gray,
+                imageNegative = R.drawable.ic_books_white
             )
         )
     }

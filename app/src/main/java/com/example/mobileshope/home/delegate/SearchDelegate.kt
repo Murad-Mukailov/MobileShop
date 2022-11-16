@@ -12,9 +12,5 @@ fun searchDelegate() = adapterDelegateViewBinding<SearchUIModel, HomeUIModels, I
         ItemSearchBinding.inflate(layoutInflater, parent, false)
     }
 ) {
-    with(binding) {
-        bind {
-            bindSearchText.selectAll()
-        }
-    }
+
 }

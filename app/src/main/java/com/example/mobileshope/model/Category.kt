@@ -4,5 +4,6 @@ import androidx.annotation.DrawableRes
 
 data class Category(
     val name: String,
-    @DrawableRes val image: Int
+    @DrawableRes val imagePositive: Int,
+    @DrawableRes val imageNegative: Int
 )

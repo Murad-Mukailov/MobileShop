@@ -9,18 +9,26 @@ data class CategoryUIModel(
     override val data: Category,
 ) : HomeUIModels(identification = data.name.hashCode().toLong())
 
-fun categoryDelegate() =
-    adapterDelegateViewBinding<CategoryUIModel, HomeUIModels, ItemCategoryBinding>(
-        viewBinding = { layoutInflater, parent ->
-            ItemCategoryBinding.inflate(layoutInflater, parent, false)
+fun categoryDelegate(
+    onItemClickListener: (CategoryUIModel) -> Any,
+) = adapterDelegateViewBinding<CategoryUIModel, HomeUIModels, ItemCategoryBinding>(
+    viewBinding = { layoutInflater, parent ->
+        ItemCategoryBinding.inflate(layoutInflater, parent, false)
+    }
+) {
+    with(binding) {
+        itemCategoryImage.setOnClickListener { onItemClickListener.invoke(item) }
+
+        bind {
+            val categoryDrawable =
+                if (item.chek) item.data.imageNegative
+                else item.data.imagePositive
+            itemCategoryImage.setImageDrawable(getDrawable(categoryDrawable))
+            nameCategoryText.text = item.data.name
+            itemCategoryImage.isSelected = item.chek
+
         }
 
-    ) {
-        with(binding) {
-            bind {
-                itemCategoryImage.setImageDrawable(getDrawable(item.data.image))
-                nameCategoryText.text = item.data.name
-                itemCategoryImage.isSelected = item.chek
-            }
-        }
     }
+
+}

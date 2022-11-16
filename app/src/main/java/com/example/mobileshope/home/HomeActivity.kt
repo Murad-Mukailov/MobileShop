@@ -3,18 +3,19 @@ package com.example.mobileshope.home
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
 import com.example.mobileshope.databinding.ActivityHomeBinding
 import com.example.mobileshope.home.delegate.*
 import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeActivity : AppCompatActivity() {
-
     private val viewModel by viewModel<HomeViewModel>()
     private lateinit var binding: ActivityHomeBinding
 
-    // создание HashMap
     private val horizontalAdapters = hashMapOf<Long, AsyncListDifferDelegationAdapter<*>>()
+    private val productAdapters = hashMapOf<Long, AsyncListDifferDelegationAdapter<*>>()
 
     private fun createHorizontalCategoryAdapter() = AsyncListDifferDelegationAdapter(
         object : DiffUtil.ItemCallback<HomeUIModels>() {
@@ -26,7 +27,11 @@ class HomeActivity : AppCompatActivity() {
                 return oldItem == newItem
             }
         },
-        categoryDelegate()
+        categoryDelegate(
+            onItemClickListener = {
+                viewModel.onCategoryClicked(it)
+            }
+        )
     )
 
     private fun createHorizontalSaleAdapter() = AsyncListDifferDelegationAdapter(
@@ -40,6 +45,19 @@ class HomeActivity : AppCompatActivity() {
             }
         },
         salesDelegate()
+    )
+
+    private fun createProductAdapter() = AsyncListDifferDelegationAdapter(
+        object : DiffUtil.ItemCallback<HomeUIModels>() {
+            override fun areItemsTheSame(oldItem: HomeUIModels, newItem: HomeUIModels): Boolean {
+                return oldItem.identification == newItem.identification
+            }
+
+            override fun areContentsTheSame(oldItem: HomeUIModels, newItem: HomeUIModels): Boolean {
+                return oldItem == newItem
+            }
+
+        }, productDelegate()
     )
 
     private val homeAdapter = AsyncListDifferDelegationAdapter(
@@ -71,16 +89,33 @@ class HomeActivity : AppCompatActivity() {
                         key, ::createHorizontalSaleAdapter
                     ).also { it.items = listUiModels }
                     this.adapter = adapter
+                    PagerSnapHelper().attachToRecyclerView(this)
                 }
             }
         ),
+        productListDelegate(
+            recyclerFactory = { productListUIModel ->
+                layoutManager = GridLayoutManager(context, 2)
+                val key = productListUIModel.identification
+                val listUIModels = productListUIModel.list
+                val isProduct = listUIModels.first() is ProductUIModel
+                if (isProduct) {
+                    val adapter = productAdapters.getOrPut(
+                        key, ::createProductAdapter
+                    ).also { it.items = listUIModels }
+                    this.adapter = adapter
+
+                }
+            }
+
+        )
+
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
         with(binding) {
             contentHomeList.adapter = homeAdapter
         }
