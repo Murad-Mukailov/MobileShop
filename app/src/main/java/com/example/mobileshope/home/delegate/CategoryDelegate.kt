@@ -28,7 +28,5 @@ fun categoryDelegate(
             itemCategoryImage.isSelected = item.chek
 
         }
-
     }
-
 }

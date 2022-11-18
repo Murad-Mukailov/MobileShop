@@ -15,7 +15,6 @@ fun productDelegate() =
         viewBinding = { layoutInflater, parent ->
             ItemProductBinding.inflate(layoutInflater, parent, false)
         }
-
     ) {
         with(binding) {
             bind {

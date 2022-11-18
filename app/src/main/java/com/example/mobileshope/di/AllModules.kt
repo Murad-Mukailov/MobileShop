@@ -4,5 +4,4 @@ fun allModules() = listOf(
     appModule(),
     homeModule(),
     networkModule()
-
 )

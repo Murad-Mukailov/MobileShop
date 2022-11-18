@@ -10,4 +10,6 @@
     <string name="iphone_12">Iphone 12</string>
     <string name="super.mega.rapido">Súper.Mega.Rápido.</string>
     <string name="buy_now">Buy now</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

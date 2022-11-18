@@ -62,6 +62,5 @@ class HomeViewModel(private val mainAPI: MainAPI) : ViewModel() {
         if (categoryUI.equals(check(true))) {
 
         }
-
     }
 }

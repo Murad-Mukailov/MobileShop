@@ -23,11 +23,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <FrameLayout
+        android:id="@+id/filter_home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="412dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/content_home_list"
         android:layout_width="match_parent"
-        android:paddingHorizontal="17dp"
         android:layout_height="0dp"
+        android:paddingHorizontal="17dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation_home_container"
         app:layout_constraintStart_toStartOf="parent"
