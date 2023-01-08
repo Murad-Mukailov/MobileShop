@@ -1,4 +1,4 @@
-package com.example.mobileshope.home.delegate
+package com.example.mobileshope.home.presentation.delegate
 
 sealed class HomeUIModels(
     open val identification: Long,

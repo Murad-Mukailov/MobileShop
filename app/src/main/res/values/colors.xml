@@ -29,12 +29,14 @@
     <color name="home_item_product_text">@color/brand_silver</color>
     <color name="home_item_name_product_text">@color/brand_stratos</color>
     <color name="product_bg">@color/brand_white</color>
+
     <color name="bottom_navigation">@color/brand_stratos</color>
     <color name="bottom_navigation_text">@color/brand_white</color>
     <color name="bottom_new">@color/brand_persimmon</color>
     <color name="name_horizontal_text">@color/brand_white</color>
     <color name="description_horizontal_text">@color/brand_white</color>
     <color name="buy_horizontal_button">@color/brand_white</color>
+    <color name="close_filter_button">@color/brand_stratos</color>
     <color name="buy_horizontal_text">@color/brand_stratos</color>
     <color name="item_category_bg">@color/brand_white</color>
     <color name="item_category_text">@color/brand_stratos</color>

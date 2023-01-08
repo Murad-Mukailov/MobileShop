@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/home_background"
-    tools:context=".home.HomeActivity">
+    tools:context=".home.presentation.HomeActivity">
 
     <TextView
         android:id="@+id/location_home_text"
@@ -16,6 +16,7 @@
         android:drawableStart="@drawable/ic_location"
         android:drawableEnd="@drawable/ic_show"
         android:drawablePadding="11dp"
+        android:paddingBottom="21dp"
         android:text="@string/location"
         android:textColor="@color/home_text_location"
         android:textSize="@dimen/font_15"
@@ -23,12 +24,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/filter_home_frame"
-        android:layout_width="match_parent"
-        android:layout_height="412dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/filter_home_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/content_home_list"
@@ -47,7 +51,7 @@
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:background="@color/bottom_navigation">
+        tools:backgroundTint="@color/bottom_navigation">
 
         <TextView
             android:id="@+id/name_home_text"
@@ -85,6 +89,5 @@
             android:layout_marginTop="27dp"
             android:src="@drawable/ic_person" />
     </com.google.android.material.card.MaterialCardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

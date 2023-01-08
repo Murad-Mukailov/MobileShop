@@ -1,7 +1,7 @@
-package com.example.mobileshope.home.delegate
+package com.example.mobileshope.home.presentation.delegate
 
 import com.example.mobileshope.databinding.ItemCategoryBinding
-import com.example.mobileshope.model.Category
+import com.example.mobileshope.home.presentation.domain.model.Category
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 
 data class CategoryUIModel(

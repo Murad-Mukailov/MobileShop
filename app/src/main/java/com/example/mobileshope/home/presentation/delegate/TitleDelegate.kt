@@ -1,4 +1,4 @@
-package com.example.mobileshope.home.delegate
+package com.example.mobileshope.home.presentation.delegate
 
 import com.example.mobileshope.databinding.ItemTitleBinding
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding

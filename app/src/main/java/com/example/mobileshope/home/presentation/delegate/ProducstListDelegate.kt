@@ -1,4 +1,4 @@
-package com.example.mobileshope.home.delegate
+package com.example.mobileshope.home.presentation.delegate
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileshope.databinding.ItemProductListBinding

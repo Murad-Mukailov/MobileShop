@@ -1,4 +1,4 @@
-package com.example.mobileshope.home
+package com.example.mobileshope.home.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import com.example.mobileshope.databinding.ActivityHomeBinding
-import com.example.mobileshope.home.delegate.*
+import com.example.mobileshope.home.presentation.delegate.*
 import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
