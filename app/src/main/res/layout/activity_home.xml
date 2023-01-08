@@ -28,6 +28,7 @@
         android:id="@+id/filter_home_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="35dp"
         android:src="@drawable/ic_filter"

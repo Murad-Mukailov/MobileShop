@@ -123,5 +123,11 @@ class HomeActivity : AppCompatActivity() {
                 homeAdapter.items = it
             }
         }
+        binding.filterHomeImage.setOnClickListener { filterDialog() }
+    }
+
+    private fun filterDialog() {
+        val dialog = FilterDialogFragment()
+        dialog.show(supportFragmentManager, null)
     }
 }
