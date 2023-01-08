@@ -1,9 +1,9 @@
-package com.example.mobileshope.home.delegate
+package com.example.mobileshope.home.presentation.delegate
 
 import androidx.core.view.isVisible
 import com.bumptech.glide.Glide
 import com.example.mobileshope.databinding.ItemSaleBinding
-import com.example.mobileshope.model.Sale
+import com.example.mobileshope.home.presentation.domain.model.Sale
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 
 data class SaleUIModel(

@@ -1,10 +1,10 @@
-package com.example.mobileshope.home.delegate
+package com.example.mobileshope.home.presentation.delegate
 
 import android.graphics.Paint
 import androidx.core.view.isVisible
 import com.bumptech.glide.Glide
 import com.example.mobileshope.databinding.ItemProductBinding
-import com.example.mobileshope.model.Product
+import com.example.mobileshope.home.presentation.domain.model.Product
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 
 data class ProductUIModel(override val data: Product) :

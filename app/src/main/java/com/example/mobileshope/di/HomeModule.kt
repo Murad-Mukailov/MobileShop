@@ -1,6 +1,6 @@
 package com.example.mobileshope.di
 
-import com.example.mobileshope.home.HomeViewModel
+import com.example.mobileshope.home.presentation.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.dsl.module
 

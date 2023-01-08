@@ -1,7 +1,7 @@
 package com.example.mobileshope.util
 
 import com.example.mobileshope.R
-import com.example.mobileshope.model.Category
+import com.example.mobileshope.home.presentation.domain.model.Category
 
 object CategoryGenerator {
     fun generateCategory(): List<Category> {

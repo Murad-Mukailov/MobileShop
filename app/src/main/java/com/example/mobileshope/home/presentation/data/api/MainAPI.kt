@@ -1,6 +1,6 @@
-package com.example.mobileshope.api
+package com.example.mobileshope.home.presentation.data.api
 
-import com.example.mobileshope.model.HomeResponse
+import com.example.mobileshope.home.presentation.domain.model.HomeResponse
 import retrofit2.http.GET
 
 interface MainAPI {
