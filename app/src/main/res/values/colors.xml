@@ -28,6 +28,7 @@
     <color name="home_item_product_background">@color/brand_white</color>
     <color name="home_item_product_text">@color/brand_silver</color>
     <color name="home_item_name_product_text">@color/brand_stratos</color>
+    <color name="button_dialog_bg">@color/brand_persimmon</color>
     <color name="product_bg">@color/brand_white</color>
 
     <color name="bottom_navigation">@color/brand_stratos</color>
