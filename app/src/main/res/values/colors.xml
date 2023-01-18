@@ -13,6 +13,8 @@
     <color name="brand_persimmon">#FF6E4E</color>
     <color name="brand_white">#FFFFFF</color>
     <color name="brand_silver">#CCCCCC</color>
+    <color name="brand_alto">#DCDCDC</color>
+
     <color name="home_background">@color/brand_wild_sand</color>
     <color name="home_text_location">@color/brand_stratos</color>
     <color name="home_item_title">@color/brand_stratos</color>
