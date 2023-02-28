@@ -1,6 +1,6 @@
 package com.example.mobileshope.di
 
-import com.example.mobileshope.home.presentation.data.api.MainAPI
+import com.example.mobileshope.home.presentation.data.api.api.MainAPI
 import okhttp3.OkHttpClient
 import org.koin.core.scope.get
 import org.koin.dsl.module

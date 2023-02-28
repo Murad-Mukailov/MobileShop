@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mobileshope.home.presentation.data.api.MainAPI
+import com.example.mobileshope.home.presentation.data.api.api.MainAPI
 import com.example.mobileshope.home.presentation.delegate.*
 import com.example.mobileshope.util.CategoryGenerator
 import kotlinx.coroutines.Dispatchers

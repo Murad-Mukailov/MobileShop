@@ -1,4 +1,4 @@
-package com.example.mobileshope.home.presentation.domain.model
+package com.example.mobileshope.home.presentation.data.api
 
 import com.google.gson.annotations.SerializedName
 data class Product(
